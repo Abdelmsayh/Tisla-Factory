@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter",sans-serif;
+}
+
+:root{
+    --main_colo: #32CD32;
+    --p_color: #8a8a8a;
+    --bg_color: #1f1f1f;
+    --white_color: #fff;
+    --black_color: #070707;
+    --border_color: rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background-color: #131313;
+}
+
+.container{
+    max-width: 1500px;
+    margin:  auto;
+    width: 80%;
+}
+
+img{
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--white_color);
+    font-family: "DM Sans", sans-serif;
+}
+
+span{
+    color: var(--main_colo);
+}
+
+.bg_lines span{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background: rgb(255,255,255, 0.03);
+    width: 1px;
+    
+}
+.bg_lines span:nth-child(1){
+    left: 10%;
+}
+
+.bg_lines span:nth-child(2){
+    left: 20%;
+}
+
+.bg_lines span:nth-child(3){
+    left: 30%;
+}
+
+.bg_lines span:nth-child(4){
+    left: 40%;
+}
+
+.bg_lines span:nth-child(5){
+    left: 50%;
+}
+
+.bg_lines span:nth-child(6){
+    left: 60%;
+}
+
+.bg_lines span:nth-child(7){
+    left: 70%;
+}
+
+.bg_lines span:nth-child(8){
+    left: 80%;
+}
+.bg_lines span:nth-child(9){
+    left: 90%;
+}
+
+.top_section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.top_section h2{
+    font-size: 30px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    transition:  0.3s;
+    z-index: 1000;
+    background-color: var(--bg_color);
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo {
+    width: 150px;
+    font-size: 30px;
+    color: var(--white_color);
+    /* margin-top: 15px; */
+    white-space: nowrap;
+    padding: 0 20px; /* مسافة من الجوانب */
+}
+
+
+
+
+/*  End Header */
+
+/*  Start Hero */
+
+.hero{
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hero .contact{
+    flex-direction: row;
+}
+.hero .div_Text{
+    width: 50%;
+}
+
+
+
+.hero .div_img{
+    width: 40%;
+    position: relative;
+    padding: 30px;
+    
+}
+
+
+
+.soial_contact{
+    width: 30%;
+
+} 
+
+.soial_contact h2{
+    color: var(--white_color);
+    margin-bottom: 40px;
+}
+
+.soial_contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.soial_contact  a{
+    color: var(--white_color);
+    font-size: 20PX;
+    margin-bottom: 25px;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+    align-items: center;
+    white-space: nowrap;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.soial_contact  a i{
+    color: var(--bg_color);
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    background: var(--main_colo);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.soial_contact  a:hover{
+    left: 15px;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; /* يأخذ نصف الشاشة */
+}
+
+.hero .div_Text {
+    width: 100%;
+    margin-bottom: 20px; /* مسافة بين النص وروابط التواصل */
+}
+
+.hero .soial_contact {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* تقسيم إلى 3 أعمدة */
+}
+
+.hero .soial_contact a {
+    font-size: 25px;
+}
+
+.hero .div_img {
+    width: 40%; /* يجعل الصورة بجانب النص والروابط */
+    position: relative;
+    padding: 30px;
+}
+
+.hero .div_img img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+footer{
+    background: var(--bg_color);
+    padding: 20px 0;
+    text-align: center;
+    color: var(--white_color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+    margin-top: 20px !important;
+}
+
+footer p{
+
+    font-size: 20px;
+}
+
+.hero .div_Text h4{
+    color: var(--p_color);
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px !important;
+}
+
+
+.hero .div_Text h2{
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 0.9;
+    /* margin-bottom: 20px; */
+}
+
+header nav .icons{
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+
+header nav .icons a {
+    color: var(--main_colo);
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+header nav .icons a:hover {
+    scale: 1.4;
+}
+
+
+@media(max-width:1250px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width:1000px){
+    .hero .div_Text h4{
+        font-size: 20px;
+    }
+
+    .hero .div_Text h2{
+        font-size: 55px;
+    }
+
+    .hero .container{
+        flex-direction: column-reverse;
+    }
+    .hero .div_Text{
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero{
+        height: auto;
+        min-height: 120vh; /* تحديد حد أدنى للارتفاع لضمان ظهور كل اللينكات */
+        padding-bottom: 80px; /* إضافة مساحة أسفل المحتوى */
+    }
+
+    .hero .div_img{
+        width: 60%;
+    }
+
+    .hero .soial_contact{
+        gap: 15px !important;
+        
+    }
+    
+
+}
+
+@media (max-width:500px){
+    header {
+        height: 60px; 
+    }
+
+    header nav .logo {
+        font-size: 20px; 
+        padding: 0 10px; 
+    }
+
+    header .icons {
+        gap: 15px; 
+    }
+
+    .hero {
+        min-height: 100vh; 
+        padding-bottom: 30px; 
+    }
+
+    .hero .container {
+        flex-direction: column-reverse; 
+        text-align: center;
+    }
+
+    .hero .div_Text h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .hero .div_Text h4 {
+        font-size: 14px;
+    }
+
+    .hero .div_img {
+        width: 80%; 
+    }
+
+    .hero .soial_contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;  
+        width: 100%;
+
+        align-items: flex-start;
+    }
+
+    .hero .soial_contact a {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+
+    footer {
+        position: relative; 
+        padding: 10px 0;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
